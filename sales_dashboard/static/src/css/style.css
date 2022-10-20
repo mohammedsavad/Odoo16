@@ -1,0 +1,22 @@
+
+.dashboardContainer{
+    padding: 2rem;
+    margin-top:1.3rem;
+}
+h5{
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+#container-wrapper{
+    margin-top: 1.4rem;
+    overflow: scroll;
+    max-height: 60vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
+}
+#container-wrapper::-webkit-scrollbar {
+    display: none;
+}

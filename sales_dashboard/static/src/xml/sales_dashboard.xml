@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<template>
+   <t t-name="SalesDashboard">
+       <div class="oh_dashboards" style="margin-top: 20px;">
+           <div class="container-fluid o_pj_dashboard">
+               <div class="dropdown xl-6 col-sm-3 col-md-2">
+                   <select class="btn btn-secondary dropdown-toggle" id="data_filter" aria-label="Filter selec">
+                      <option class="dropdown-item" selected="true" value="0">Sales by sales team</option>
+                      <option class="dropdown-item" value="1">Sales by sales person</option>
+                      <option class="dropdown-item" value="2">Top 10 customers</option>
+                      <option class="dropdown-item" value="3">Lowest selling products</option>
+                      <option class="dropdown-item" value="4">Highest selling products</option>
+                      <option class="dropdown-item" value="5">Order status</option>
+                      <option class="dropdown-item" value="6">Invoice status</option>
+                    </select>
+               </div>
+                <div class="dashboardContainer">
+                    <div class="row justify-content-center">
+                        <div class="col col-md-10">
+                            <div class="container" id="card-container">
+                                <div class="row">
+                            <div class="col">
+                              <div class="card border-success mb-3" id="btn-01" style="max-width: 18rem;">
+                                  <div class="card-header">Quotations</div>
+                                  <div class="card-body text-success">
+                                    <h5 class="card-title" id="title-01"></h5>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                              <div class="card border-danger mb-3" id="btn-02" style="max-width: 18rem;">
+                                  <div class="card-header">Sale Orders</div>
+                                  <div class="card-body text-danger">
+                                    <h5 class="card-title" id="title-02"></h5>
+                                       </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                              <div class="card border-info mb-3" id="btn-03" style="max-width: 18rem;">
+                                  <div class="card-header" id='invoiced'>Invoiced</div>
+                                  <div class="card-body">
+                                    <h5 class="card-title" id="title-03"></h5>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                            </div>
+                            <div class="card text-center" id="container-wrapper">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </div>
+   </t>
+</template>
