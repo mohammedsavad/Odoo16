@@ -3,16 +3,25 @@
    <t t-name="SalesDashboard">
        <div class="oh_dashboards" style="margin-top: 20px;">
            <div class="container-fluid o_pj_dashboard">
-               <div class="dropdown xl-6 col-sm-3 col-md-2">
-                   <select class="btn btn-secondary dropdown-toggle" id="data_filter" aria-label="Filter selec">
-                      <option class="dropdown-item" selected="true" value="0">Sales by sales team</option>
-                      <option class="dropdown-item" value="1">Sales by sales person</option>
-                      <option class="dropdown-item" value="2">Top 10 customers</option>
-                      <option class="dropdown-item" value="3">Lowest selling products</option>
-                      <option class="dropdown-item" value="4">Highest selling products</option>
-                      <option class="dropdown-item" value="5">Order status</option>
-                      <option class="dropdown-item" value="6">Invoice status</option>
-                    </select>
+               <div class="dropdown">
+                      <div class="row">
+                        <div class="col col-md-2">
+                          <select class="btn btn-secondary dropdown-toggle" id="data_filter" aria-label="Filter selec">
+                              <option class="dropdown-item" selected="true" value="0">Filter</option>
+                              <option class="dropdown-item" value="1">Week</option>
+                              <option class="dropdown-item" value="2">Month</option>
+                          </select>
+                        </div>
+                        <div class="col col-md-10" >
+                            <button class="btn btn-secondary options" data-id="0">by sales team</button>
+                            <label class="btn btn-secondary options" data-id="1">by sales person</label>
+                            <label class="btn btn-secondary options" data-id="2">Top 10 customers</label>
+                            <label class="btn btn-secondary options" data-id="3">Lowest selling products</label>
+                            <label class="btn btn-secondary options" data-id="4">Highest selling products</label>
+                            <label class="btn btn-secondary options" data-id="5">Order status</label>
+                            <label class="btn btn-secondary options" data-id="6">Invoice status</label>
+                        </div>
+                      </div>
                </div>
                 <div class="dashboardContainer">
                     <div class="row justify-content-center">
@@ -45,7 +54,16 @@
                             </div>
                           </div>
                             </div>
-                            <div class="card text-center" id="container-wrapper">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col">
+                                  <div class="card text-center" id="container-wrapper">
+                                  </div>
+                                </div>
+                                <div class="col">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                              </div>
                             </div>
                         </div>
                     </div>

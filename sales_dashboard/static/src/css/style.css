@@ -2,6 +2,7 @@
 .dashboardContainer{
     padding: 2rem;
     margin-top:1.3rem;
+    margin-bottom:6rem;
 }
 h5{
     font-size: large;
@@ -12,11 +13,20 @@ h5{
 #container-wrapper{
     margin-top: 1.4rem;
     overflow: scroll;
-    max-height: 60vh;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    
+    margin-bottom:2.3 rem;
+
 }
 #container-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.container-fluid{
+    overflow: scroll;
+    max-height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.container-fluid::-webkit-scrollbar {
     display: none;
 }
